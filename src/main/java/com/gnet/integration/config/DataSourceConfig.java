@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
+import java.sql.SQLOutput;
 
 @Configuration
 public class DataSourceConfig {
@@ -37,6 +38,7 @@ public class DataSourceConfig {
         dataSource.setUrl(primaryPosgreUrl);
         dataSource.setUsername(primaryPosgreUsername);
         dataSource.setPassword(primaryPostgrepassword);
+        System.out.println(".......................prodDataSource........>");
         return dataSource;
     }
 
