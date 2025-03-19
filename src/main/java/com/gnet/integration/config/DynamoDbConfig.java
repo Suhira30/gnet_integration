@@ -38,9 +38,4 @@ import org.springframework.context.annotation.Configuration;
                     .build();
             return s;
         }
-
-//	public static void main(String[] args) {
-//		DynamoDbConfig d = new DynamoDbConfig();
-//		d.mapper();
-//	}
     }

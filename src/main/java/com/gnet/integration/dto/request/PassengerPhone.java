@@ -1,4 +1,4 @@
-package com.gnet.integration.dto.request.bookingreq;
+package com.gnet.integration.dto.request;
 
 public class PassengerPhone {
     private String number;

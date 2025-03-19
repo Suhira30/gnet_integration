@@ -1,4 +1,4 @@
-package com.gnet.integration.dto.request.bookingreq;
+package com.gnet.integration.dto.request;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,6 +9,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GnetVQLocation {
-    private GnetVQLocationPickup pickup;
-    private GnetVQLocationDropOff dropOff;
+    private GnetReceiveBookingLocationLite pickup;
+    private GnetReceiveBookingLocationLite dropOff;
 }

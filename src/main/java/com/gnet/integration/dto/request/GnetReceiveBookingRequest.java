@@ -1,4 +1,4 @@
-package com.gnet.integration.dto.request.bookingreq;
+package com.gnet.integration.dto.request;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +10,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GnetViewQuotesRequest {
+public class GnetReceiveBookingRequest {
     private String reservationDate;
     private AffiliateReservation affiliateReservation;
     private String reservationType;
