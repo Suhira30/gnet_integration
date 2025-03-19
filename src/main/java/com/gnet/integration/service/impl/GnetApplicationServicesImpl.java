@@ -3,7 +3,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.gnet.integration.dao.GnetDao;
 import com.gnet.integration.dto.request.bookingreq.GnetViewQuotesRequest;
-import com.gnet.integration.dto.request.bookingreq.ValidVehicleGroupRequest;
 import com.gnet.integration.dto.request.bookingreq.ValidVehicleRequest;
 import com.gnet.integration.dto.request.bookingreq.response.GnetViewQuotesResponse;
 import com.gnet.integration.entity.dynamo.B2BAccountDetail;
@@ -16,6 +15,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import smartzi.v2.b2b.res.VehicleGroupB2BVTMapRes;
 import smartzi.v2.vq.req.ViewQuoteV2Req;
 
 import java.text.SimpleDateFormat;
@@ -153,7 +153,10 @@ public class GnetApplicationServicesImpl implements GnetApplicationServices {
             }
 
             validvehicleRequest.setB2bAccountDetailId(Long.parseLong(B2BAccountDetailId));
-            OfferVehicleB2BVTMapRes b2bVgList = gnetDao.getValidVehicleGroups(validvehicleRequest);
+            VehicleGroupB2BVTMapRes vehicleGroup = gnetDao.getValidVehicleGroups(validvehicleRequest);
+            if(vehicleGroup != null){
+
+            }
 
             /**
              * STEP 5 : if distance available in Gnet VQ request don't apply smartzi distance calculation utility
