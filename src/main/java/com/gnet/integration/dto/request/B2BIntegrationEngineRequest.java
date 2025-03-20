@@ -1,4 +1,4 @@
-package com.gnet.integration.dto;
+package com.gnet.integration.dto.request;
 
 import com.gnet.integration.dto.request.GnetReceiveBookingRequest;
 import com.gnet.integration.dto.request.LocationEx;
@@ -100,7 +100,7 @@ public class B2BIntegrationEngineRequest {
                 "PickUp special Instruction : " +
                 gnetReceiveBookingRequest.getLocations().getPickup().getSpecialInstructions() +
                         "DropOff LandMark : " + gnetReceiveBookingRequest.getLocations().getDropOff().getLandmark() +
-                        "DropOff special Instruction : " + gnetReceiveBookingRequest.getLocations().getDropOff().getSpecialInstructions() +
+                        "DropOff special Instruction : " + gnetReceiveBookingRequest.getLocations().getDropOff().getSpecialInstructions()
 
         ;
         this.testStr = CommonUtils.getCoordinate();
