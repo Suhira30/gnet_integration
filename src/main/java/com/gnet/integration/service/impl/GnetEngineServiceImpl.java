@@ -1,6 +1,6 @@
 package com.gnet.integration.service.impl;
 
-import com.gnet.integration.dto.B2BIntegrationEngineRequest;
+import com.gnet.integration.dto.request.B2BIntegrationEngineRequest;
 import com.gnet.integration.dto.request.GnetReceiveBookingRequest;
 import com.gnet.integration.dto.request.response.GnetReceiveReservationResponse;
 import com.gnet.integration.repository.dynamo.DynamoDBRepository;

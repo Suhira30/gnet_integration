@@ -38,7 +38,6 @@ public class DataSourceConfig {
         dataSource.setUrl(primaryPosgreUrl);
         dataSource.setUsername(primaryPosgreUsername);
         dataSource.setPassword(primaryPostgrepassword);
-        System.out.println(".......................prodDataSource........>");
         return dataSource;
     }
 
