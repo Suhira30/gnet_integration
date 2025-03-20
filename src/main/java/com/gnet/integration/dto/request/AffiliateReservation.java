@@ -11,4 +11,5 @@ public class AffiliateReservation {
     private String requesterId;
     private String requesterResNo;
     private String providerId;
+    private String notes;
 }

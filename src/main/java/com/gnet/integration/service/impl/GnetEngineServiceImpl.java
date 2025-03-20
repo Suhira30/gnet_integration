@@ -66,7 +66,7 @@ public class GnetEngineServiceImpl implements GnetEngineServices {
 
                 } else if (gnetReceiveBookingRequest.getAffiliateReservation().getAction().equals("UPDATE") &&
                         gnetReceiveBookingRequest.getAffiliateReservation().getStatus().isEmpty()) {
-
+                    B2BCancellationRequest updateRequest = new B2BCancellationRequest(gnetReceiveBookingRequest);
 
                 } else if (gnetReceiveBookingRequest.getAffiliateReservation().getAction().equals("CANCEL") &&
                         !gnetReceiveBookingRequest.getAffiliateReservation().getStatus().isEmpty()) {
