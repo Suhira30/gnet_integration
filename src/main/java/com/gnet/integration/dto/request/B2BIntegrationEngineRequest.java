@@ -92,7 +92,7 @@ public class B2BIntegrationEngineRequest {
         this.customerId=0;
         this.flightNumber=gnetReceiveBookingRequest.getLocations().getPickup().getFlightInfo().getFlightNumber();
         this.flightDateTime="";
-        this.passengerCount=gnetReceiveBookingRequest.getPassengerCount();
+        this.passengerCount= Short.parseShort(gnetReceiveBookingRequest.getPassengerCount());
         this.luggageCount=0;
         this.remarks=
                 "PickUp LandMark: " +

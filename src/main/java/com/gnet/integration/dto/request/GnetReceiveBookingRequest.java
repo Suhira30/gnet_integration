@@ -10,24 +10,27 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GnetReceiveBookingRequest extends GnetUpdateRequest {
+public class GnetReceiveBookingRequest  {
     private String reservationDate;
-    private AffiliateReservation affiliateReservation;
+    private GnetAffiliateReservation affiliateReservation;
     private String reservationType;
-    private String status;
     private String runType;
-    private short passengerCount;
+    private String passengerCount;
     private String totalTripDuration;
-    private String eventName;
-    private List<Passenger> passengers;
+    private List<GnetPassenger> passengers;
     private String namesignInstructions;
     private GnetVQLocation locations;
     private String specialInstructions;
-    private String sourceVendor;
-    private String origination;
-    private List<String> note;
+    private GnetNote notes;
     private String preferredVehicleType;
     private String submitMode;
+    private GnetAccount account;
     private String transactionId;
-
+    private GnetVehicle vehicle;
+    private String status;
+    private String totalAmount;
+    private List<GnetFees> fees;
+    private GnetChauffer chauffer;
+//    private String sourceVendor;
+//    private String origination;
 }

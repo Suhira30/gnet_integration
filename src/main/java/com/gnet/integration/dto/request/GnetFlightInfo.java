@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class FlightInfo {
+public class GnetFlightInfo {
 private String flightNumber;
 private String airlineCode;
 }

@@ -5,11 +5,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class AffiliateReservation {
+public class GnetAffiliateReservation {
     private String action;
     private String status;
     private String requesterId;
     private String requesterResNo;
     private String providerId;
-    private String notes;
+    private String providerResNo;
+//    private String notes;
 }

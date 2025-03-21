@@ -16,5 +16,5 @@ public class GnetReceiveBookingLocationLite extends GnetReceiveBookingPickup {
     private String zipCode;
     private String country;
     private String specialInstructions;
-    private FlightInfo flightInfo;
+    private GnetFlightInfo flightInfo;
 }

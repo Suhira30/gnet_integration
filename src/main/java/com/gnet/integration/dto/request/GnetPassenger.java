@@ -5,10 +5,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Passenger {
+public class GnetPassenger {
 private String firstName;
 private String lastName;
 private String email;
 private String phoneNumber;
-private Phone phones;
+private GnetPhone phones;
+private String alias;
 }
