@@ -1,4 +1,4 @@
-package com.gnet.integration.dto.request.response;
+package com.gnet.integration.dto.response;
 
 import lombok.Getter;
 import lombok.Setter;
